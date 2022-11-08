@@ -9,10 +9,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/poe/model/Trainee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/poe/model/Trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poe/model/Trainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,22 @@
       <recent name="poe.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestTrainee.testConstructor">
+  <component name="RunManager" selected="JUnit.TestTrainee.testAllArgsConstructor">
+    <configuration name="TestTrainee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.TestTrainee" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTrainee.severalInstances" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -69,6 +84,22 @@
       <option name="PACKAGE_NAME" value="poe.model" />
       <option name="MAIN_CLASS_NAME" value="poe.model.TestTrainee" />
       <option name="METHOD_NAME" value="severalInstances" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTrainee.testAllArgsConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.TestTrainee" />
+      <option name="METHOD_NAME" value="testAllArgsConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,6 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTrainee.testAllArgsConstructor" />
+        <item itemvalue="JUnit.TestTrainee" />
         <item itemvalue="JUnit.TestTrainee.testConstructor" />
         <item itemvalue="JUnit.TestTrainee.severalInstances" />
       </list>
@@ -118,5 +151,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

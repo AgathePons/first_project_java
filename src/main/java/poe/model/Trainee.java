@@ -7,6 +7,9 @@ public class Trainee {
     private String lastname;
     private LocalDate birthdate;
 
+    public Trainee() {
+    }
+
     public Trainee(String firstname, String lastname, LocalDate birthdate) {
         this.firstname = firstname;
         this.lastname = lastname;
