@@ -57,7 +57,7 @@
       <recent name="poe.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestTrainee.testAllArgsConstructor">
+  <component name="RunManager" selected="JUnit.TestTrainee.testToString">
     <configuration name="TestTrainee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -121,8 +121,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTrainee.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.TestTrainee" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTrainee.testToString" />
         <item itemvalue="JUnit.TestTrainee.testAllArgsConstructor" />
         <item itemvalue="JUnit.TestTrainee" />
         <item itemvalue="JUnit.TestTrainee.testConstructor" />
@@ -151,16 +168,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

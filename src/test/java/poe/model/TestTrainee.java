@@ -23,7 +23,7 @@ class TestTrainee {
         Trainee trainee = new Trainee("Matt", "Damon", birthdate);
         assertEquals("Matt", trainee.getFirstname(), "firstname");
         assertEquals("Damon", trainee.getLastname(), "lastname");
-        assertEquals(birthdate, trainee.getBirthdate());
+        assertEquals(birthdate, trainee.getBirthdate(), "birthdate");
     }
 
     @Test
@@ -32,5 +32,11 @@ class TestTrainee {
         Trainee trainee2 = new Trainee();
         System.out.println(trainee1);
         System.out.println(trainee2);
+    }
+
+    @Test
+    void testToString() {
+        Trainee trainee = new Trainee("Micheline", "Durand", LocalDate.of(1950, 5, 18));
+        System.out.println(trainee.toString());
     }
 }

@@ -39,4 +39,13 @@ public class Trainee {
     public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
+
+    @Override
+    public String toString() {
+        return "Trainee{" +
+                firstname + ' ' +
+                lastname + " (" +
+                birthdate +
+                ")}";
+    }
 }
