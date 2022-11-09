@@ -30,14 +30,14 @@ public class Poe {
 
     @Override
     public String toString() {
-        return "Poe{" +
+        return "\nPoe{" +
                 title +
-                "\n" +
+                " " +
                 poeType +
                 " (" +
                 beginDate +
                 " to " +
                 endDate +
-                ")}";
+                ")}\n";
     }
 }
