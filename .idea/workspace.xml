@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0771eb72-6e1c-46c0-8965-aa77a3b67d84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/poe/model/Poe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/poe/model/PoeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoeType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/poe/model/Trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poe/model/Trainee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/poe/model/Poe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poe/model/Poe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,17 +35,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Addon/devspace/java-workspace/basics",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Addon/devspace/java-workspace/basics&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -63,7 +54,22 @@
       <recent name="poe.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPoe.testToString">
+  <component name="RunManager" selected="JUnit.TestPoe">
+    <configuration name="TestPoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.TestPoe" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPoeType.testAllLiterals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -75,22 +81,6 @@
       <option name="PACKAGE_NAME" value="poe.model" />
       <option name="MAIN_CLASS_NAME" value="poe.model.TestPoeType" />
       <option name="METHOD_NAME" value="testAllLiterals(poe.model.PoeType)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPoeType.testLitteralPOEI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poebackoffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poe.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="poe.model" />
-      <option name="MAIN_CLASS_NAME" value="poe.model.TestPoeType" />
-      <option name="METHOD_NAME" value="testLitteralPOEI" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPoe" />
         <item itemvalue="JUnit.TestPoe.testToString" />
         <item itemvalue="JUnit.TestPoe.testAllArgsConstructor" />
         <item itemvalue="JUnit.TestPoe.testDefaultConstructor" />
         <item itemvalue="JUnit.TestPoeType.testAllLiterals" />
-        <item itemvalue="JUnit.TestPoeType.testLitteralPOEI" />
       </list>
     </recent_temporary>
   </component>

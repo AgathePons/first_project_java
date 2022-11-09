@@ -18,19 +18,6 @@ public class Poe {
     public Poe() {
     }
 
-    @Override
-    public String toString() {
-        return "Poe{" +
-                title +
-                "\n" +
-                poeType +
-                " (" +
-                beginDate +
-                " to " +
-                endDate +
-                ")}";
-    }
-
     public String getTitle() {
         return title;
     }
@@ -61,5 +48,18 @@ public class Poe {
 
     public void setPoeType(PoeType poeType) {
         this.poeType = poeType;
+    }
+
+    @Override
+    public String toString() {
+        return "Poe{" +
+                title +
+                "\n" +
+                poeType +
+                " (" +
+                beginDate +
+                " to " +
+                endDate +
+                ")}";
     }
 }
