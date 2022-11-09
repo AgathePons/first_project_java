@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0771eb72-6e1c-46c0-8965-aa77a3b67d84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/play/playWithTrainee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/play/playWithPoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/play/playWithPoeType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestPoeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoeType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="poe.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.playWithTrainee">
+  <component name="RunManager" selected="JUnit.playWithPoe">
     <configuration name="TestPoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -88,22 +88,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPoe.testDefaultConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poebackoffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poe.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="poe.model" />
-      <option name="MAIN_CLASS_NAME" value="poe.model.TestPoe" />
-      <option name="METHOD_NAME" value="testDefaultConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestPoe.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -116,6 +100,21 @@
       <option name="MAIN_CLASS_NAME" value="poe.model.TestPoe" />
       <option name="METHOD_NAME" value="testToString" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="playWithPoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.play.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model.play" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.play.playWithPoe" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.playWithPoe" />
         <item itemvalue="JUnit.playWithTrainee" />
         <item itemvalue="JUnit.TestPoe" />
         <item itemvalue="JUnit.TestPoe.testToString" />
         <item itemvalue="JUnit.TestPoe.testAllArgsConstructor" />
-        <item itemvalue="JUnit.TestPoe.testDefaultConstructor" />
       </list>
     </recent_temporary>
   </component>
