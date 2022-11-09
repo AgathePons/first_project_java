@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0771eb72-6e1c-46c0-8965-aa77a3b67d84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/poe/model/play/playWithTrainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/poe/model/Poe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/poe/model/Poe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestPoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/poe/model/TestTrainee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,7 +45,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Addon/devspace/java-workspace/basics&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,7 +56,7 @@
       <recent name="poe.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPoe">
+  <component name="RunManager" selected="JUnit.playWithTrainee">
     <configuration name="TestPoe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poebackoffice" />
       <extension name="coverage">
@@ -66,22 +68,6 @@
       <option name="PACKAGE_NAME" value="poe.model" />
       <option name="MAIN_CLASS_NAME" value="poe.model.TestPoe" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPoeType.testAllLiterals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poebackoffice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poe.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="poe.model" />
-      <option name="MAIN_CLASS_NAME" value="poe.model.TestPoeType" />
-      <option name="METHOD_NAME" value="testAllLiterals(poe.model.PoeType)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,13 +120,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="playWithTrainee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poebackoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poe.model.play.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="poe.model.play" />
+      <option name="MAIN_CLASS_NAME" value="poe.model.play.playWithTrainee" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.playWithTrainee" />
         <item itemvalue="JUnit.TestPoe" />
         <item itemvalue="JUnit.TestPoe.testToString" />
         <item itemvalue="JUnit.TestPoe.testAllArgsConstructor" />
         <item itemvalue="JUnit.TestPoe.testDefaultConstructor" />
-        <item itemvalue="JUnit.TestPoeType.testAllLiterals" />
       </list>
     </recent_temporary>
   </component>
