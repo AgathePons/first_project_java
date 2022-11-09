@@ -20,7 +20,6 @@ public class playWithPoe {
         poe.setBeginDate(LocalDate.of(2020, 05, 24));
         poe.setEndDate(LocalDate.of(2021, 05, 24));
         poe.setPoeType(PoeType.POEI);
-        System.out.println(poe.toString());
         assertEquals("Java full stack", poe.getTitle(), "title");
         assertEquals(LocalDate.of(2020, 05, 24), poe.getBeginDate(), "beginDate");
         assertEquals(LocalDate.of(2021, 05, 24), poe.getEndDate(), "endDate");
