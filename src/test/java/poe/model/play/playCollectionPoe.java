@@ -58,14 +58,17 @@ public class playCollectionPoe {
   }
 
   @Test
-  void playWithListPoe() {
+  void numberOfPoei() {
     // exo 1 number of POEI
     int poeiNumber = poeList.stream()
       .filter(poe -> PoeType.POEI.equals(poe.getPoeType()))
             .toList()
             .size();
     System.out.println("number of POEI: " + poeiNumber);
+  }
 
+  @Test
+  void averageOfPoeDaysDuration() {
     // exo 2 average of POE duration in days
     OptionalDouble countPoeAverageDays = poeList.stream()
             .mapToLong(poe -> ChronoUnit.DAYS.between(poe.getBeginDate(), poe.getEndDate()))
