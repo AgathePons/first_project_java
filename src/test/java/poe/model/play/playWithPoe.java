@@ -8,6 +8,7 @@ import poe.model.Trainee;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,10 +40,44 @@ public class playWithPoe {
 
     @Test
     void testToString() {
-        LocalDate beginDate = LocalDate.of(2020, 05, 24);
-        LocalDate endDate = LocalDate.of(2021, 05, 24);
-        List<Trainee> trainees = new ArrayList<>();
-        Poe poe = new Poe("Java full stack", beginDate, endDate, PoeType.POEI, trainees);
-        assertEquals("\nPoe{Java full stack POEI (2020-05-24 to 2021-05-24)}\n", poe.toString());
+        Poe poe = Poe.builder()
+                .title("Java Fullstack")
+                .beginDate(LocalDate.of(2022, 10, 24))
+                .endDate(LocalDate.of(2023, 1, 27))
+                .poeType(PoeType.POEI)
+                .build();
+        assertEquals("\nPoe{Java Fullstack POEI (2022-10-24 to 2023-01-27)}\n", poe.toString());
+    }
+
+    @Test
+    void testAddTrainee() {
+        Poe poe = Poe.builder()
+                .title("Java Fullstack")
+                .beginDate(LocalDate.of(2022, 10, 24))
+                .endDate(LocalDate.of(2023, 1, 27))
+                .poeType(PoeType.POEI)
+                .build();
+        Trainee trainee = Trainee.builder()
+                .firstname("Wesh")
+                .build();
+        poe.addTrainee(trainee);
+    }
+
+    @Test
+    void testAddTrainees() {
+        Poe poe = Poe.builder()
+                .title("Java Fullstack")
+                .beginDate(LocalDate.of(2022, 10, 24))
+                .endDate(LocalDate.of(2023, 1, 27))
+                .poeType(PoeType.POEI)
+                .build();
+        Trainee trainee1 = Trainee.builder()
+                .firstname("Wesh")
+                .build();
+        Trainee trainee2 = Trainee.builder()
+                .firstname("Alors")
+                .build();
+        Set<Trainee> trainees = Set.of(trainee1, trainee2);
+        poe.addTrainees(trainees);
     }
 }
