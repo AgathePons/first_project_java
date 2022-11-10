@@ -18,42 +18,47 @@ public class playCollectionPoe {
   @BeforeAll
   static void initData() {
     poeList = List.of(
-            new Poe(
-                    "Java Fullstack",
-                    LocalDate.of(2022, 10, 24),
-                    LocalDate.of(2023, 1, 27),
-                    PoeType.POEI
-            ),
-            new Poe(
-                    "Java Fullstack",
-                    LocalDate.of(2022, 11, 2),
-                    LocalDate.of(2023, 2, 3),
-                    PoeType.POEC
-            ),
-            new Poe(
-                    "Consultant Devops",
-                    LocalDate.of(2022, 6, 13),
-                    LocalDate.of(2022, 9, 16),
-                    PoeType.POEC
-            ),
-            new Poe(
-                    "Consultant Cyber Sécurité",
-                    LocalDate.of(2021, 9, 13),
-                    LocalDate.of(2021, 11, 16),
-                    PoeType.POEI
-            ),
-            new Poe(
-                    "Consultant SAP",
-                    LocalDate.of(2022, 4, 13),
-                    LocalDate.of(2022, 8, 16),
-                    PoeType.POEI
-            ),
-            new Poe(
-                    "Consultant BI",
-                    LocalDate.of(2022, 9, 24),
-                    LocalDate.of(2022, 11, 23),
-                    PoeType.POEI
-            )
+            Poe.builder()
+                    .title("Java Fullstack")
+                    .beginDate(LocalDate.of(2022, 10, 24))
+                    .endDate(LocalDate.of(2023, 1, 27))
+                    .poeType(PoeType.POEI)
+                    .build(),
+
+            Poe.builder()
+                    .title("Java Fullstack")
+                    .beginDate(LocalDate.of(2022, 11, 2))
+                    .endDate(LocalDate.of(2023, 2, 3))
+                    .poeType(PoeType.POEC)
+                    .build(),
+
+            Poe.builder()
+                    .title("Consultant Devops")
+                    .beginDate(LocalDate.of(2022, 6, 13))
+                    .endDate(LocalDate.of(2022, 9, 16))
+                    .poeType(PoeType.POEC)
+                    .build(),
+
+            Poe.builder()
+                    .title("Consultant Cyber Sécurité")
+                    .beginDate(LocalDate.of(2021, 9, 13))
+                    .endDate(LocalDate.of(2021, 11, 16))
+                    .poeType(PoeType.POEI)
+                    .build(),
+
+            Poe.builder()
+                    .title("Consultant SAP")
+                    .beginDate(LocalDate.of(2022, 4, 13))
+                    .endDate(LocalDate.of(2022, 8, 16))
+                    .poeType(PoeType.POEI)
+                    .build(),
+
+            Poe.builder()
+                    .title("Consultant BI")
+                    .beginDate(LocalDate.of(2022, 9, 24))
+                    .endDate(LocalDate.of(2022, 11, 23))
+                    .poeType(PoeType.POEI)
+                    .build()
     );
   }
 
@@ -61,7 +66,7 @@ public class playCollectionPoe {
   void numberOfPoei() {
     // exo 1 number of POEI
     int poeiNumber = poeList.stream()
-      .filter(poe -> PoeType.POEI.equals(poe.getPoeType()))
+            .filter(poe -> PoeType.POEI.equals(poe.getPoeType()))
             .toList()
             .size();
     System.out.println("number of POEI: " + poeiNumber);
