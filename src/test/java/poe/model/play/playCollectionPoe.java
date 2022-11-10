@@ -6,8 +6,7 @@ import poe.model.Poe;
 import poe.model.PoeType;
 
 import java.time.LocalDate;
-import java.util.List;
-import java.util.OptionalDouble;
+import java.util.*;
 
 import java.time.temporal.ChronoUnit;
 
@@ -82,5 +81,28 @@ public class playCollectionPoe {
     // or if we are sure to have at least one value, we can add .getAsDouble(); at the end to have direct a double
     // at the beginning of the list, we can add .skip() or .limit() to do the action on a sample of the list
     System.out.println("average of POE duration in days: " + countPoeAverageDays.getAsDouble());
+  }
+
+  @Test
+  void sortPoe() {
+    // NavigableSet<Poe> poeSet = new TreeSet<>(poeList);
+    // we cannot do this because Poe is not comparable by default
+    // List<Poe> poeList2 = new ArrayList<>(poeList);
+    // Collections.sort(poeList2); -> does not work because we must give a comparator
+    // Comparator<Poe> comparatorPoe = (p1, p2) -> -1; return always -1
+    // Comparator<Poe> comparatorPoe = Comparator.comparing(Poe::getBeginDate); // -> one arg keyExtractor
+    Comparator<Poe> comparatorPoe = Comparator.comparing(
+            Poe::getBeginDate,
+            Comparator.reverseOrder()
+    ); // -> we can add a second argument keyComparator
+    NavigableSet<Poe> poeSet = new TreeSet<>(comparatorPoe);
+    poeSet.addAll(poeList);
+    System.out.println(poeSet);
+    // multi criteria: poeType then date
+    Comparator<Poe> comparatorPoe2 = Comparator.comparing(Poe::getPoeType)
+            .thenComparing(Poe::getBeginDate); // -> then second criteria
+    NavigableSet<Poe> poeSet2 = new TreeSet<>(comparatorPoe2);
+    poeSet2.addAll(poeList);
+    System.out.println(poeSet2);
   }
 }
