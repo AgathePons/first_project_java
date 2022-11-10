@@ -29,6 +29,10 @@ public class Poe {
         trainees.addAll(otherTrainees);
     }
 
+    public void addTrainees(Trainee... otherTrainees) {
+            Collections.addAll(trainees,  otherTrainees); // act like a for each loop to put trainee one by one
+    }
+
     @Override
     public String toString() {
         return "\nPoe{" +
