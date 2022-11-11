@@ -38,6 +38,14 @@ class TestMonster {
 
   }
   @Test
+  void testAddCapacitiesCollection() {
+
+  }
+  @Test
+  void testAddCapacitiesVarArgs() {
+
+  }
+  @Test
   void testToString() {
 
   }
