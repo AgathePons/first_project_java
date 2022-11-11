@@ -1,12 +1,14 @@
 package poe.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter @Setter
@@ -16,28 +18,31 @@ public class Poe {
     private LocalDate endDate;
     private PoeType poeType;
 
-    public String getTitle() {
-        return title;
+    @Builder.Default
+    private List<Trainee> trainees = new ArrayList<>();
+
+    public void addTrainee(Trainee trainee) {
+        trainees.add(trainee);
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void addTrainees(Collection<? extends Trainee> otherTrainees) {
+        trainees.addAll(otherTrainees);
     }
 
-    public LocalDate getBeginDate() {
-        return beginDate;
+    public void addTrainees(Trainee... otherTrainees) {
+            Collections.addAll(trainees,  otherTrainees); // act like a for each loop to put trainee one by one
     }
 
     @Override
     public String toString() {
-        return "Poe{" +
+        return "\nPoe{" +
                 title +
-                "\n" +
+                " " +
                 poeType +
                 " (" +
                 beginDate +
                 " to " +
                 endDate +
-                ")}";
+                ")}\n";
     }
 }
