@@ -13,7 +13,7 @@ public class Capacity {
 
   @Override
   public String toString() {
-    return "\nCapacity: " +
+    return "\n>> " +
             title +
             "\nvalue: " +
             value +

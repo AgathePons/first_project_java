@@ -37,8 +37,10 @@ public class Monster {
     String output = name.toUpperCase() +
             " : " +
             alignment +
-            "\nCapacities:";
-    capacities.forEach(capacity -> capacity.toString());
+            "\n-- Capacities --";
+    for (Capacity capacity : capacities) {
+      output += capacity.toString();
+    }
     return output;
   }
 }
