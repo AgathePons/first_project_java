@@ -38,6 +38,9 @@ public class Monster {
             " : " +
             alignment +
             "\n-- Capacities --";
+    if (capacities.size() == 0) {
+      output += "\n\tno capacity";
+    }
     for (Capacity capacity : capacities) {
       output += capacity.toString();
     }

@@ -13,11 +13,11 @@ public class Capacity {
 
   @Override
   public String toString() {
-    return "\n>> " +
+    return "\n>>\t " +
             title +
-            "\nvalue: " +
+            "\n\tvalue: " +
             value +
-            "\n-> " +
+            "\n\t-> " +
             description;
   }
 }
