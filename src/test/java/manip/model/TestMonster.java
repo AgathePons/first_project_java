@@ -87,6 +87,32 @@ class TestMonster {
     assertSame(capacities, monster.getCapacities());
   }
   @Test
+  void testToStringWithoutCapacity() {
+    Monster monster2 = Monster.builder()
+            .name("Green dragon")
+            .birthdate(LocalDate.of(2020, 11, 28))
+            .alignment(Alignment.EVIL)
+            .build();
+    assertEquals(
+            "GREEN DRAGON : EVIL\n-- Capacities --\n\tno capacity",
+            monster2.toString()
+    );
+  }
+  @Test
+  void testToStringWithCapacity() {
+    Monster monster2 = Monster.builder()
+            .name("Green dragon")
+            .birthdate(LocalDate.of(2020, 11, 28))
+            .alignment(Alignment.EVIL)
+            .build();
+    monster2.addCapacity(capacity1);
+    assertEquals(
+            "GREEN DRAGON : EVIL\n-- Capacities --\n>>\t Fire Ball\n\tvalue: 25\n\t-> Throws a ball of fire",
+            monster2.toString()
+    );
+  }
+
+  @Test
   void testAddCapacity() {
     monster.addCapacity(capacity1);
     assertTrue(monster.getCapacities().contains(capacity1), "capacity1 is contained in monster");
@@ -111,19 +137,5 @@ class TestMonster {
             ))
     );
   }
-  @Test
-  void testToStringWithCapacity() {
-    monster.addCapacity(capacity1);
-    assertEquals(
-            "GREEN DRAGON : EVIL\n-- Capacities --\n>>\t Fire Ball\n\tvalue: 25\n\t-> Throws a ball of fire",
-            monster.toString()
-    );
-  }
-  @Test
-  void testToStringWithoutCapacity() {
-    assertEquals(
-            "GREEN DRAGON : EVIL\n-- Capacities --\n\tno capacity",
-            monster.toString()
-    );
-  }
+
 }
